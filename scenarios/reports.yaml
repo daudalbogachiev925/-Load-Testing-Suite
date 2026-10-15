@@ -1,0 +1,21 @@
+name: reports
+description: Отчёты — тяжёлые аналитические запросы
+users: 20
+duration_sec: 60
+ramp_up_sec: 10
+steps:
+  - name: sales_report_daily
+    weight: 30
+    duration_ms: 1200
+  - name: sales_report_monthly
+    weight: 20
+    duration_ms: 3500
+  - name: balance_report
+    weight: 20
+    duration_ms: 2500
+  - name: abc_analysis
+    weight: 15
+    duration_ms: 4500
+  - name: export_to_excel
+    weight: 15
+    duration_ms: 2000
